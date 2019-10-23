@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业二</title>
+	<style>
+	.boxone,.boxtwo{
+		width: 200px;
+		height: 200px;
+	}
+	.boxone{
+		background: red;
+		float: left;
+		display: none;
+	}
+	.boxtwo{
+		background: blue;
+		display: none;
+	}
+	.showred:hover ~.boxone{
+        display: block;
+	}
+	.showblue:hover ~ .boxtwo{
+		display: block;
+	}
+	</style>
+</head>
+<body>
+	<div class="showred">显示盒子一</div>
+	<div class="showblue">显示盒子二</div>
+	<div class="boxone"></div>
+	<div class="boxtwo"></div>     
+</body>
+</html>

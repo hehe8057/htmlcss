@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	*{
+		margin:0;
+		padding:0;
+		list-style: none;
+	}
+	html,body,.wrapper{
+	  height:100%;
+	}
+	.wrapper{
+		display: flex;
+		flex-direction: column;
+	}
+	.top,.bottom{
+		height: 60px;
+		background-color: teal;
+	}
+	.content{
+		flex: 1;
+		overflow: scroll;
+		/*overflow: hidden;*/
+	}
+	/*.content .scroll{
+		width: 425px;
+		overflow:scroll;
+	}*/
+	/*.content::-webkit-scrollbar {
+        display: none;
+    }*/
+	.content div{
+		height: 400px;
+	}
+	.top ul{
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+	}
+	.top ul li:first-child{
+		flex: 2;
+	}
+	.top ul li:nth-child(2){
+		flex: 4;
+	}
+	.top ul li:last-child{
+		flex: 1;
+	}
+	.top{
+		line-height: 60px;
+	}
+</style>
+<body>
+	<div class="wrapper">
+		<div class="top">
+			<ul>
+				<li>
+					<div>测试</div>
+				</li>
+				<li>
+					<input type="text">
+				</li>
+				<li>
+					<img src="" alt="图片">
+				</li>
+			</ul>
+		</div>
+		<div class="content">
+			<!-- <div class="scroll"> -->
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+			<!-- </div> -->
+		</div>
+		<div class="bottom"></div>
+	</div>
+</body>
+</html>

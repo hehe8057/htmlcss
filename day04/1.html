@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业一</title>
+	<style>
+	/*重置*/
+		body,ul,p{
+			margin: 0;
+		}
+		ul{
+			padding: 0;
+			list-style: none;
+		}
+    /*导航*/
+    .nav{
+    	background: black;
+    	color: #ccc;
+    }
+     .nav > ul > li{    /*增加浮动*/
+    	float: left;
+    	width: 100px;
+    	text-align: center;
+    	position: relative;
+    }
+    .nav > ul::after{   /*清除浮动*/
+    	content: "";
+    	display: block;
+    	clear: both;
+    }
+    .nav li{
+    	line-height: 3em;
+    }
+    .nav > ul > li:hover{
+    	background: #ededed;
+    	color: #333;
+    }
+    /* 二级导航容器 */
+    .nav > ul > li > ul {
+			display: none;
+			position: absolute;
+			background-color: #ededed;
+			color: #333;
+			width: 100%;
+	}
+	.nav > ul > li:hover > ul  {
+			display: block;
+
+	}
+    .nav > ul > li > ul > li:hover{
+    	background: black;
+    	color: #ccc;
+    }
+
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+			<li>
+				<p>one</p>
+			</li>
+			<li>
+				<p>two</p>
+			</li>
+			<li>
+				<p>three</p>
+				<ul>
+					<li>1</li>
+					<li>2</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

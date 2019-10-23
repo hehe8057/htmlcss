@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+</head>
+<body>
+<!-- http://134.175.154.93:8099/manager/user/saveOrUpdateUser -->
+	<form action="http://134.175.154.93:8099/manager/user/saveOrUpdateUser" method="get"  enctype="application/x-www-form-urlencoded">
+	<table>
+       <tbody>
+       <!-- 用户名 -->
+       	<tr>
+       		<td>用户名</td>
+       		<td> <input placeholder="please input you name" type="text" name="username">
+            </td>
+       	</tr>
+       	<!-- 密码 -->
+       	<tr>
+       		<td>密码</td>
+       		<td> <input type="password" name="password"></td>
+       	</tr>
+       	<!-- 真实姓名 -->
+       	<tr>
+       		<td>真实姓名</td>
+       		<td><input type="text" name="nickname"></td>
+       	</tr>
+       	<!-- email -->
+       	<tr>
+       		<td>eamil</td>
+       		<td><input type="text" name="email"></td>
+       	</tr>
+            <!--出生日期-->
+            <tr>
+                  <td>出生日期</td>
+                  <td><input type="date" name="birthday"></td>
+            </tr>
+       	<!-- 性别 -->
+       	<tr>
+       		<td>性别</td>
+       		<td>
+                   <label for="gender_male">
+                        <input id="gender_male"  type="radio" name="gender" value="male " checked="checked">男
+                   </label>
+                   <label for="gender_female">
+                         <input id="gender_female" type="radio" name="gender"  value="female">女
+                   </label>
+       		</td>
+       	</tr>
+            <!--爱好-->
+            <tr>
+                  <td>爱好</td>
+                  <td>
+                  <label>
+                         <input type="checkbox" name="hobby" value="basketball" checked="checked">篮球
+                   </label>
+                   <label>
+                          <input type="checkbox" name="hobby" value="fooyball">足球
+                   </label>
+                   <label>
+                          <input type="checkbox" name="hobby" value="read">阅读
+                  
+                   </label>
+                   </td>
+            </tr>
+            <!--地址-->
+            <tr>
+                  <td>地址</td>
+                  <td>
+                     <select name="province" >
+                           <option value="js">江苏</option>
+                           <option value="sx">山西</option>
+                           <option value="hn">湖南</option>
+                           <option value="sh">上海</option>
+                     </select>
+                     省
+                     <select name="city" >
+                           <option value="sz">苏州</option>
+                           <option value="nj">南京</option>
+                           <option value="zj">镇江</option>
+                           <option value="ha">淮安</option>
+                     </select>
+                     市
+
+
+                  </td>
+            </tr>
+            <!---个人介绍-->
+            <tr>
+                  <td>个人介绍</td>
+                  <td><textarea placeholder="请编写个人介绍" name="grjs" rows="10" cols="50"></textarea></td>
+            </tr>
+       	<tr>      
+       		<td colspan="2">
+       			<input type="submit" name="sb" value="注册">
+       		</td>
+       	</tr>
+       </tbody>
+	</table>
+	</form>
+  <div data-nn='one'></div>
+</body>
+</html>
+
+
+
+
+<!-- <form 
+		action="http://134.175.154.93:8099/manager/file/upload" 
+		method="POST" 
+		enctype="multipart/form-data">
+
+		附件 <input type="file">
+		<input type="submit" value="上传">
+
+	</form> -->
